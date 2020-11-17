@@ -10,6 +10,7 @@ import { OxfordComponent } from './oxford/oxford.component';
 import { TshirtComponent } from './tshirt/tshirt.component';
 import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     OxfordComponent,
     TshirtComponent,
     HomeComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
