@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private productService: ProductService, @Inject('baseURL') private baseURL) { }
 
   ngOnInit(): void {
-    this.productService.getProducts().subscribe(products => this.products = products)
+    this.productService.getBestSellers().subscribe(products => this.products = products)
     
   }
   

@@ -16,12 +16,14 @@
         <!-- Wrap the rest of the page in another container to center all the content. -->
   
         <div class="container marketing" *ngIf="products">
+          <h2>Best Sellers</h2>
           <!-- Three columns of text below the carousel -->
           <div class="row">
             <div class="col-lg-4" *ngFor="let product of products">
               <img class="rounded-circle" src="{{baseURL + product.image}}" alt="Generic placeholder image" width="140" height="140">
               <h2>{{product.name}}</h2>
-              <h4>{{product.price</h4>
+              <h4>{{product.price}}</h4>
+              <h5>Orders: {{product.orders}}</h5>
               <p>{{product.description}}</p>
               <p><a class="btn btn-secondary" href="#" role="button">Add to cart &raquo;</a></p>
             </div><!-- /.col-lg-4 -->

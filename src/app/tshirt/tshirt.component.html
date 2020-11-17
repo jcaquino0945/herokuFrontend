@@ -1,1 +1,13 @@
-<p>tshirt works!</p>
+<div class="container marketing" *ngIf="TshirtProducts">
+    <h2>Tshirt Products</h2>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let TshirtProduct of TshirtProducts">
+        <img class="rounded-circle" src="{{baseURL + TshirtProduct.image}}" alt="Generic placeholder image" width="140" height="140">
+        <h2>{{TshirtProduct.name}}</h2>
+        <h4>{{TshirtProduct.price}}</h4>
+        <h5>Orders: {{TshirtProduct.orders}}</h5>
+        <p>{{TshirtProduct.description}}</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Add to cart &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->

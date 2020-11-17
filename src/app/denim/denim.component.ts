@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { Product } from '../shared/product';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-denim',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./denim.component.css']
 })
 export class DenimComponent implements OnInit {
-
-  constructor() { }
+  denimProducts: Product[];
+  constructor(private productService: ProductService, @Inject('baseURL') private baseURL) { }
 
   ngOnInit(): void {
+    
   }
 
 }

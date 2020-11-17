@@ -14,4 +14,12 @@ export class ProductService {
 
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(baseURL + '/products');
-  }}
+  }
+  getBestSellers(): Observable<Product[]> {
+    return this.http.get<Product[]>(baseURL + '/products/bestSellers');
+  }
+  getTshirtProducts(): Observable<Product[]> {
+    return this.http.get<Product[]>(baseURL + '/products/category/Tshirt');
+  }
+
+}
